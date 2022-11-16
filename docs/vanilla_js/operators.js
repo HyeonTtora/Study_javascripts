@@ -16,8 +16,8 @@ const filepath =
 let inputs = fs.readFileSync(filepath).toString().trim().split(" ").map(Number);
 // fs.readFileSync(filepath) 자바의 스캐너와 같은 역할
 
-const num1 = (input[0]);
-const num2 = (input[1]);
+const num1 = (inputs[0]);
+const num2 = (inputs[1]);
 
 
 console.log(num1 + num2);
