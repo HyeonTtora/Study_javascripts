@@ -16,7 +16,30 @@ for (let animal of animals) {
 const cars = ["BMW", "Volvo", "Mini"];
 for(let car of cars){
     console.log(`${car}`);
+    cars[0];
 }
+// car;
+cars.forEach(car => console.log(`${car}`));
+
+
+// forEach
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+//Arrow Function
+let arrowFunction = (element) => {console.log(element)}
+//파라매타  => {스코프}
+
+array1.forEach(arrowFunction);
+
+// Nomal Function
+function normalFunction(element){
+    console.log(element);
+}
+
+//NomalFunction
+// function elementNormal()
 
 
 //objects.js 
