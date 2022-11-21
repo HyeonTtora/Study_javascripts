@@ -38,14 +38,26 @@
             console.log(body);
         }); // body 내에있는 모든 형제를 출력
 
-        let queryLists = document.querySelectorAll(".list");
-        queryLists.forEach((list, index) => {
-            console.log(list);
-            let queryItems = list.querySelectorAll(".item");
+        // let queryLists = document.querySelectorAll(".list");
+        // queryLists.forEach((list, index) => {
+        //     console.log(list);
+        //     let queryItems = list.querySelectorAll(".item");
+        //     queryItems.forEach((item, index) => {
+        //         console.log(item);
+        //     });
+        // });    // .lsit .item 각각
+
+        let querylist = document.querySelectorAll(".list")
+        querylist.forEach((list, index) => {
+            console.log(`${index} : ${list.outerHTML}`);
+            // querylist[0].querySelectorAll(".item")
+            let queryItems = list.querySelectorAll(".item")
             queryItems.forEach((item, index) => {
-                console.log(item);
+                console.log(`${index} : ${item.outerHTML}`);
             });
-        });    // .lsit .item 각각
+        });
+
+        //querylist[0].querySelectorAll(".item")[0]
 
 
     </script>
