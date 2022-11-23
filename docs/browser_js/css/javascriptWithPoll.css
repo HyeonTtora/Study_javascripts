@@ -1,0 +1,9 @@
+*{
+    border: 1px solid gray;
+}
+
+input{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}

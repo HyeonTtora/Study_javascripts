@@ -26,5 +26,5 @@ const productsData = [
 
 const queryList = document.querySelector("#list");
 productsData.forEach(element => {
-    queryList.innerHTML+=  "<div class = 'item'>" + "title : "+ element["title"]+"weight : "+element["weight"]+"</div>";
+    queryList.innerHTML+=  "<div class = 'item'>" + "title : "+ element["title"]+" weight : "+element["weight"]+"</div>";
 });
