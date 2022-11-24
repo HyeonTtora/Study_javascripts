@@ -95,10 +95,6 @@ for (let idx = 0; idx < questions_answers.length; idx++) {
         questions.push(questions_answers[idx]["answer_uid"]);
     }
     question_compare = questions_answers[idx]["questions_uid"]; // 이전 uid 입력
-    if( 14 == idx){
-        polls.push(questions)
-        questions = [];
-    }
 }
-
+polls.push(questions)
 console.log(`${polls}`)
