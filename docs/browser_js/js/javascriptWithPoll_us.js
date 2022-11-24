@@ -76,6 +76,8 @@ const questions_answers = [
 
 
 //2차방식 : Array in Array [ [Q1, E1, E2] , [Q2, E1, E2, E3] ... ] ] 
+
+//3차방식 : Object in Array [{questions_uid:Q1 , answer_uid:[E1],[E3] .. }]
 let polls = []; // 전체 묶음
 let question_compare;
 let questions = []; // 내부 묶음
@@ -93,8 +95,11 @@ for (let idx = 0; idx < questions_answers.length; idx++) {
     } else {
         // console.log(`== : ${questions_answers[idx]["answer_uid"]}`);
         questions.push(questions_answers[idx]["answer_uid"]);
+        if(idx +1 >=questions_answers[idx]["answer_uid"]){
+            polls.push(questions);
+        };
     }
     question_compare = questions_answers[idx]["questions_uid"]; // 이전 uid 입력
 }
-polls.push(questions)
+// polls.push(questions)
 console.log(`${polls}`)
