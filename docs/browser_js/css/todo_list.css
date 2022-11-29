@@ -1,0 +1,73 @@
+*{
+    /* border: 1px solid gray; */
+    font-size: 18px;
+}
+.delete {
+    color: crimson;
+    cursor: pointer;
+}
+
+.favorite {
+    color: rgb(250, 4, 135);
+    cursor: pointer;
+}
+
+#notFavorite {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+      
+    }
+
+#favorite {
+    font-variation-settings:
+      'FILL' 100,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+      color: rgb(255, 59, 173);
+      cursor: pointer;
+}
+
+div > div {
+    padding: 0.5rem;
+}
+
+
+.comment {
+    width: 80%;
+    padding: 1rem 1rem 1rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 59, 173);
+    background-color: rgb(255, 205, 244);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.newComment {
+    margin-bottom: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.commentBtn {
+    width: 10%;
+    padding: 1rem;
+    color:  rgb(255, 59, 173);
+    background-color:  rgb(255, 205, 244);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+

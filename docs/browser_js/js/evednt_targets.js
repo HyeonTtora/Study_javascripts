@@ -13,3 +13,26 @@ function singleEvent(event){
     querrySingle.innerHTML = "Take One Event!";
 }
 
+let querrykeydown = document.querySelector("#keydown");
+querrykeydown.addEventListener("keydown",(event)=>{
+    console.log(event);
+    if(event.code =='Enter'){
+        keydownDesc(querrykeydown.value);
+    }
+    console.log(event.target);
+});
+
+let desc = querrykeydown.value
+
+function keydownDesc(desc){
+    let querrykeydownDesc = document.querySelector("#keydownDesc");
+    querrykeydownDesc.innerHTML = desc;
+}
+
+let queryload = document.querySelector("#keydownDesc");
+queryload.addEventListener("load",queryLoad()); 
+
+function queryLoad(){
+    queryload.innerHTML = "Done On Load!";
+
+}
